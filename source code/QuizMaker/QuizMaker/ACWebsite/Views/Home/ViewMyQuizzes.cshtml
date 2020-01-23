@@ -1,0 +1,63 @@
+﻿@using Microsoft.AspNetCore.Http
+@model PaginatedList<ACWebsite.Models.Quiz>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "View Your Quizzes";
+}
+<h2>Your Quizzes</h2>
+<hr />
+<div class="row">
+    @{ var count = 1;}
+    @if (Model == null || Model.Count() == 0)
+    {
+        <div class="card-body">It looks like there's nothing here</div>
+    }
+    else
+    {
+        <form asp-controller="Home" asp-action="ViewMyQuizzes" method="get">
+            <p>
+                Search: <input name="search" />
+                <input type="submit" value="Search">
+            </p>
+        </form>
+
+        <label>Sort by: </label>
+        <div class="btn-group">
+            <a asp-controller="Home" asp-route-sort="name" asp-action="ViewMyQuizzes" asp-route-currentFilter="@ViewData["CurrentFilter"]" class="btn btn-default">Question Name</a>
+            <a asp-controller="Home" asp-route-sort="date" asp-action="ViewMyQuizzes" asp-route-currentFilter="@ViewData["CurrentFilter"]" class="btn btn-default">Date</a>
+        </div>
+        <hr />
+        @foreach (var item in Model)
+        {
+            <div style="width: 90%; display: block; border: 1px solid DarkGrey; margin: 10px 0px 10px 0px; padding: 0px 20px 5px 20px; border-radius: 10px; @if(count++ % 2 == 0) { @Html.Raw("background-color: LightGrey;") }">
+                <h3>
+                    <a asp-controller="Home" asp-action="ViewQuiz" asp-route-id="@item.id">@item.title</a>
+                </h3>
+                <p class="text-muted small">Posted on: @item.created.ToShortDateString()</p>
+            </div>
+        }
+    }
+</div>
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+@if (Model != null && Model.Count() != 0)
+{
+    <a asp-action="ViewMyQuizzes"
+       asp-route-sort="@ViewData["CurrentSort"]"
+       asp-route-page="@(Model.PageIndex - 1)"
+       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+       class="btn btn-default @prevDisabled">
+        Previous
+    </a>
+    <a asp-action="ViewMyQuizzes"
+       asp-route-sort="@ViewData["CurrentSort"]"
+       asp-route-page="@(Model.PageIndex + 1)"
+       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+       class="btn btn-default @nextDisabled">
+        Next
+    </a>
+}

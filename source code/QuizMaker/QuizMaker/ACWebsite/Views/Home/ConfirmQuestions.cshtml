@@ -1,0 +1,76 @@
+﻿@using Microsoft.AspNetCore.Http;
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Question & Answer Confirmation";
+}
+<!--Yunmei page-->
+<html>
+<head>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div style="margin-left: 15px;margin-right: 15px" class="content-header">
+            <h1>
+                Display Question &amp; Answer
+                <a href="/Home/Quizhome" class="btn btn-secondary my-2" style="background-color: #33CCFF; float: right">Quiz Home</a>
+            </h1>
+        </div><br />
+        <div class="content container-fluid">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <div class="alert alert-info">
+                        1. Please double check your question and answer(s); <br />
+                        2. Confirm your question and answer(s) if it is correct.<br />
+                        3. Edit it if you would like to make the question and answer(s) better.<br />
+                        4. Click <a href="/Home/QAmaking"><b>Question &amp; Answers</b></a> if you would like to make a short answer or multiple choice answers for your question.<br />
+                        5. Click <a href="/Home/QAmakingtruefalse"><b>True &amp; False</b></a> if you would like to make a true/false answer for your question.<br />
+                        6. Click <b><a href="/Home/Quizhome">Quiz Home</a></b> if you would like to take a quiz. <br />
+                    </div>
+                </div>
+                <div class="card-body" style="box-sizing: border-box; border: 1px solid #bbbfc3; ">
+                    <div>
+                        <a href="/Home/QAmakingtruefalse" class="btn btn-secondary my-2" style="background-color: #33CCFF; float:right">True &amp; False</a>
+                        <p style="float:right">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <a href="/Home/QAmaking" class="btn btn-secondary my-2" style="background-color: #33CCFF; float:right">Question &amp; Answers</a>
+                    </div>
+                    <br /><br /><br /><br />
+                    <div>
+                        <b>Question: </b><br />
+                        <ul>
+                            @Context.Session.GetString("Qcontent")
+                        </ul>
+                        <ul>
+                            Answer1 - This is a CORRECT answer please:
+                            <li>@Context.Session.GetString("Answer1")</li>
+                        </ul>
+                        <ul>
+                            Answer2:
+                            <li>@Context.Session.GetString("Answer2")</li>
+                        </ul>
+                        <ul>
+                            Answer3:
+                            <li>@Context.Session.GetString("Answer3")</li>
+                        </ul>
+                        <ul>
+                            Answer4:
+                            <li>@Context.Session.GetString("Answer4")</li>
+                        </ul>
+                    </div>
+                    <br /><br />
+                    <div class="form-group row mb-2">
+                        <br />
+                        <form method="POST">
+                            <button asp-action="QAedit" type="submit" style="border:solid 1px black" class="btn btn-xs btn-primary">Edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button asp-action="QAmakingend" type="submit" style="border:solid 1px black" class="btn btn-xs btn-danger">Confirm</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

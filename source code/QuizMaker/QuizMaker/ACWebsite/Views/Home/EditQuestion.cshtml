@@ -1,0 +1,30 @@
+﻿@model ACWebsite.Models.Question
+@using Microsoft.AspNetCore.Http
+
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Editing Question & Answer";
+}
+
+<!-- Yunmei page -->
+<div class="container">
+
+    <form asp-controller="Home" asp-action="QAedit" method="post">
+        <br /><br /><br />
+        <h2>Edit Question &amp; Answer</h2><br />
+        <input type="hidden" value="@Model.QuestionId" name="QuestionId" />
+
+        <label for="text">Question: </label>
+        <textarea class="form-control" rows="30" asp-for="Qcontent" name="Content" type="text" data-length="2000"></textarea><br />
+        <label for="text">Answer1: </label>
+        <textarea class="form-control" rows="30" asp-for="Answer1" name="Content" type="text" data-length="2000"></textarea><br />
+        <label for="text">Answer2: </label>
+        <textarea class="form-control" rows="30" asp-for="Answer2" name="Content" type="text" data-length="2000"></textarea><br />
+        <label for="text">Answer3: </label>
+        <textarea class="form-control" rows="30" asp-for="Answer3" name="Content" type="text" data-length="2000"></textarea><br />
+        <label for="text">Answer4: </label>
+        <textarea class="form-control" rows="30" asp-for="Answer4" name="Content" type="text" data-length="2000"></textarea><br />
+
+        <button class="form-control" type="submit">Edit Q &amp; A</button>
+    </form>
+</div>

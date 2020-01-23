@@ -1,0 +1,92 @@
+﻿@model ACWebsite.Models.Question
+
+@{
+    ViewData["Title"] = "QuestionDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Question Details</h1>
+
+<head>
+    <style>
+        .correctColor:hover {
+            background-color: forestgreen;
+            transition: ease-in 0.5s;
+        }
+    </style>
+</head>
+<div>
+
+    <hr />
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" colspan="4">Question Details</th>
+            </tr>
+            <tr>
+                <th class="table-light text-dark" style="text-align: center; font-size: 20px" colspan="4">@Model.question</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                Random rnd = new Random();
+                List<string> answers;
+                if (Model.answer_3 == null && Model.answer_4 == null)
+                {
+                    answers = new List<string>(new string[] { Model.answer_1.ToString(), Model.answer_2.ToString() });
+
+                }
+                else if (Model.answer_4 == null)
+                {
+                    answers = new List<string>(new string[] { Model.answer_1.ToString(), Model.answer_2.ToString(), Model.answer_3.ToString() });
+                }
+                else
+                {
+                    answers = new List<string>(new string[] { Model.answer_1.ToString(), Model.answer_2.ToString(), Model.answer_3.ToString(), Model.answer_4.ToString() });
+
+                }
+
+
+                int randomIndex = 0;
+
+                String correctAnswer = answers[Model.answer - 1];
+                List<string> shuffled = new List<string>();
+                while (answers.Count > 0)
+                {
+                    randomIndex = rnd.Next(0, answers.Count); //Choose a random object in the list
+                    shuffled.Add(answers[randomIndex]); //add it to the new, random list
+                    answers.RemoveAt(randomIndex); //remove to avoid duplicates
+                }
+
+
+
+
+                @for (int i = 0; i < shuffled.Count; i++)
+                {
+                    <tr>
+                        @if (shuffled[i] == correctAnswer)
+                        {
+
+                            <td class=" table-active correctColor">@shuffled[i]</td>
+                            continue;
+
+                        }
+                        else
+                        {
+
+                            <td class="table-active">@shuffled[i]</td>
+                        }
+                    </tr>
+                }
+
+            }
+
+
+        </tbody>
+    </table>
+
+
+</div>
+<div>
+    <a asp-action="Main">Back to List</a>
+</div>

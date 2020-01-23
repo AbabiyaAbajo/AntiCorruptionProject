@@ -1,0 +1,26 @@
+﻿@model ACWebsite.Models.Quiz
+@using Microsoft.AspNetCore.Http
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Create Quiz";
+}
+
+<h2>Create New Quiz</h2>
+
+<form asp-controller="Home" asp-action="MakeQuiz">
+    <input hidden asp-for="userid" value="@Context.Session.GetInt32("UserId")" />
+
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input class="form-control" asp-for="title" required autofocus />
+    </div>
+    <hr />
+    <div class="form-group">
+        <label for="answer_1">Description</label>
+        <textarea class="form-control" asp-for="description" rows="5" required></textarea>
+    </div>
+    <hr />
+
+    <button type="submit" class="btn btn-default" value="create">Create</button>
+</form>
+

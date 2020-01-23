@@ -1,0 +1,130 @@
+﻿@using Microsoft.AspNetCore.Http
+@model ACWebsite.Models.QuizTakeModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Take Quiz";
+}
+
+<h2 class="text-center">@Model.Quiz.title</h2>
+<hr />
+
+@if (@Model.Questions == null || @Model.Questions.Count() == 0)
+{
+<div class="card-body">Your quiz has no questions. @Html.ActionLink("Add questions here!", "ViewQuiz", "Home", new { id = Model.Quiz.id }, null)</div>
+}
+else
+{
+    <div class="panel">
+        <form asp-controller="Home" asp-action="SubmitQuiz" method="post">
+            <input type="hidden" name="quizId" value="@Model.Quiz.id">
+
+            @foreach (var question in Model.Questions)
+            {
+                if (question.type == 1)
+                {
+                    <div class="form-group">
+                        <textarea class="form-control bg-info text-white" rows="2" readonly>@question.question</textarea>
+                    </div>
+                    <div class="ml-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rd_@question.id" id="rd_1_@question.id" onclick="submitRadio(this, @question.id)" value="@question.answer_1">
+                            <label class="form-check-label" for="rd_1_@question.id">
+                                @question.answer_1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rd_@question.id" id="rd_2_@question.id" onclick="submitRadio(this, @question.id)" value="@question.answer_2">
+                            <label class="form-check-label" for="rd_2_@question.id">
+                                @question.answer_2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rd_@question.id" id="rd_3_@question.id" onclick="submitRadio(this, @question.id)" value="@question.answer_3">
+                            <label class="form-check-label" for="rd_3_@question.id">
+                                @question.answer_3
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rd_@question.id" id="rd_4_@question.id" onclick="submitRadio(this, @question.id)" value="@question.answer_4">
+                            <label class="form-check-label" for="rd_4_@question.id">
+                                @question.answer_4
+                            </label>
+                        </div>
+                    </div>
+                    <h6 class=" text-right text-muted" id="q_sf_st_@question.id"> </h6>
+                    //                    <div class="form-group ml-4">
+                    //                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter you answer"></textarea>
+                    //                   </div>
+                }
+                if (question.type == 2)
+                {
+                    <div class="form-group">
+                        <textarea class="form-control bg-primary text-white" rows="2" readonly>@question.question</textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check form-check-inline ml-4">
+                            <input class="form-check-input" type="radio" name="tf_rd_@question.id" id="tf_rd_1_@question.id" onclick="submitRadio(this, @question.id)" value="True">
+                            <label class="form-check-label" for="tf_rd_1_@question.id">True</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check form-check-inline ml-4">
+                            <input class="form-check-input" type="radio" name="tf_rd_@question.id" id="tf_rd_2_@question.id" onclick="submitRadio(this, @question.id)" value="False">
+                            <label class="form-check-label" for="tf_rd_2_@question.id">False</label>
+                        </div>
+                    </div>
+                    <h6 class=" text-right text-muted" id="q_sf_st_@question.id"> </h6>
+                }
+
+                /*
+                <div style="width: auto; display: block; border: 1px solid DarkGrey; margin: 10px 0px 10px 0px; padding: 0px 20px 5px 20px; border-radius: 10px; @if(count++ % 2 == 0) { @Html.Raw("background-color: LightGrey;") }">
+                    <h3>
+                        <a asp-controller="Home" asp-action="ViewQuiz" asp-route-id="@item.id">@item.title</a>
+                    </h3>
+                    <p class="text-muted small">Posted on: @item.created.ToShortDateString()</p>
+                </div>
+                */
+            }
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="/Home/SubmitQuiz/1" class="btn btn-success float-right">Submit</a>
+                </div>
+            </div>
+        </form>
+    </div>
+}
+<script>
+
+    function submitRadio(myRadio, question_id) {
+        console.log(myRadio.value + " " + question_id);
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) { // Answer 
+
+                var today = new Date();
+                var hour = today.getHours();
+                var min = (today.getMinutes() < 10 ? '0' : '') + today.getMinutes();
+                var sec = (today.getSeconds() < 10 ? '0' : '') + today.getSeconds();
+                var timestamp = hour + ":" + min + ":" + sec;
+                var answer_element = document.getElementById("q_sf_st_" + question_id);
+                answer_element.textContent = "You answer saved. " + timestamp;
+
+            } if(this.readyState == 4 && this.status != 200) {
+                var answer_element = document.getElementById("q_sf_st_" + question_id);
+                answer_element.textContent = "Error...";
+            }
+
+        };
+        xhttp.open("POST", "/Home/saveAnswer", true);
+        xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhttp.send("quiz_id=@Model.Quiz.id&question_id=" + question_id + "&answr=" + myRadio.value);
+
+    }
+
+    function submitQuiz() {
+        console.log("Test1");
+    }
+
+</script>
+

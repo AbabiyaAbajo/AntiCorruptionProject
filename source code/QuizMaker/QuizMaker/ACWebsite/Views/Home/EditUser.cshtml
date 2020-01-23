@@ -1,0 +1,184 @@
+﻿@model ACWebsite.Models.User
+@using Microsoft.AspNetCore.Http
+
+@addTagHelper "*, Microsoft.AspNet.Mvc.TagHelpers"
+@{
+    ViewData["Title"] = "EditUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<hr />
+
+<style>
+    #upload_button {
+        display: block;
+    }
+
+        #upload_button input[type=file] {
+            display: none;
+        }
+</style>
+
+<div class="row">
+    <div class="col-md-4">
+        <img src="~/images/Jaeden.jpg" alt="profileImage" class="img-thumbnail profile-pic">
+        <div id="upload_button">
+            <label>
+                <input class="file-upload" type="file" ngf-select ng-model="new_files" ng-change="fs.uploadFiles(new_files)" multiple>
+                <span class="btn btn-primary">Change photo</span>
+            </label>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="btn-group-vertical" id="mybuttons">
+            <button class="btn btn-outline-primary active " id="btn_overview" data-toggle="collapse" data-parent="#accordion" href="#overView">
+                <i class="glyphicon glyphicon-home"></i>
+                Overview
+            </button>
+
+            <button class="btn btn-outline-primary" id="btn_reset" data-toggle="collapse" data-parent="#accordion" href="#passwordReset">
+                <i class="glyphicon glyphicon-user"></i>
+                Reset password
+
+            </button>
+
+            <button class="btn btn-outline-primary" id="btn_priv" data-toggle="collapse" data-parent="#accordion" href="#privileges">
+                <i class="glyphicon glyphicon-lock"></i>
+                Privileges
+
+            </button>
+            <button class="btn btn-outline-primary" id="btn_task" href="#">
+                <i class="glyphicon glyphicon-ok"></i>
+                Tasks
+
+            </button>
+            <button class="btn btn-outline-primary" id="btn_help" href="#">
+                <i class="glyphicon glyphicon-flag"></i>
+                Help
+
+            </button>
+
+        </div>
+        <br />
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="panel-group" id="accordion">
+            <div class="panel">
+                <form asp-controller="home" asp-action="EditUserS" id="overView" class="panel-collapse collapse in">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="name" class="control-label">Full Name</label>
+                        <input asp-for="name" class="form-control" required />
+                        <span asp-validation-for="name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="email" class="control-label">Email Address</label>
+                        <input asp-for="email" class="form-control" readonly required />
+                        <span asp-validation-for="email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" value="">Save <i class="glyphicon glyphicon-floppy-save"></i></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="panel">
+                <form asp-controller="home" asp-action="ChangePassword" id="passwordReset" class="panel-collapse collapse">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="password" class="control-label">Current Password</label>
+                        <input asp-for="password" type="password" class="form-control" required />
+                        <span asp-validation-for="password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="newPassword" class="control-label">New Password</label>
+                        <input asp-for="newPassword" class="form-control" required />
+                        <span asp-validation-for="newPassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="confirmPassword" class="control-label">Confirm New Password</label>
+                        <input asp-for="confirmPassword" class="form-control" required />
+                        <span asp-validation-for="confirmPassword" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Save <i class="glyphicon glyphicon-floppy-save"></i></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="panel">
+                @if (Context.Session.GetInt32("RoleId") == 1)
+                {
+                    <form asp-controller="Home" asp-action="AdminEditUser" method="post" id="privileges" class="panel-collapse collapse">
+                        <div class="form-group">
+                            <input hidden type="text" name="userid" value="@Model.id" />
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary form-control">Allow Admin Privliages</button>
+                        </div>
+                    </form>
+                }
+                else
+                {
+                    <div id="privileges" class="alert alert-success panel-collapse collapse" role="alert" style="text-align:center">
+                        Admin privilege for question censorship is granted!!!
+                    </div>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div style="padding-top: 50px">
+    <a class="btn btn-primary btn-sm" asp-controller="home" asp-action="Main">Back</a>
+</div>
+
+
+
+<script>
+    $(document).ready(function () {
+
+
+        var readURL = function (input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.profile-pic').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+
+        $(".file-upload").on('change', function () {
+            readURL(this);
+        });
+
+        $(".upload-button").on('click', function () {
+            $(".file-upload").click();
+        });
+
+
+    });
+
+    var header = document.getElementById("mybuttons");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            current[0].classList.add(" collapsed");
+            this.className += " active";
+        });
+    }
+
+</script>

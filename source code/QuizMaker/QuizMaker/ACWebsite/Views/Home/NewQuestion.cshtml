@@ -1,0 +1,100 @@
+﻿@model ACWebsite.Models.Question
+@using Microsoft.AspNetCore.Http
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "New Question";
+}
+
+<h2>Create New Question</h2>
+
+<form asp-controller="Home" asp-action="CreateQuestion">
+    <input hidden asp-for="userid" value="@Context.Session.GetInt32("UserId")" />
+
+    <label>Question Type:</label>
+    <div class="btn-group" data-toggle="buttons">
+        <label id="mtlp_choice" class="btn btn-primary active"><input asp-for="type" value="1" type="radio" checked/> <label>Multiple-Choice</label></label>
+        <label id="true_false" class="btn btn-primary"><input asp-for="type" value="2" type="radio" /> <label>True-False</label> </label>
+    </div>
+
+
+    <div class="form-group">
+        <label for="question">Question</label>
+        <input class="form-control" asp-for="question" required autofocus />
+    </div>
+    <hr />
+    <div class="form-group">
+        <label for="answer_1">Answer 1</label>
+        <input class="form-control" asp-for="answer_1" required id="q1" />
+    </div>
+    <div class="form-group">
+        <label for="answer_2">Answer 2</label>
+        <input class="form-control" asp-for="answer_2" required id="q2" />
+    </div>
+    <div class="form-group">
+        <label for="answer_3">Answer 3</label>
+        <input class="form-control" asp-for="answer_3" required id="q3" />
+    </div>
+    <div class="form-group">
+        <label for="answer_4">Answer 4</label>
+        <input class="form-control" asp-for="answer_4" required id="q4" />
+    </div>
+
+    <label>Correct Answer:</label>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active" id="a1_parent"><input asp-for="answer" value="1" type="radio" checked/><label id="a1">Answer 1</label></label>
+        <label class="btn btn-primary" id="a2_parent"><input asp-for="answer" value="2" type="radio" /><label id="a2">Answer 2</label></label>
+        <label class="btn btn-primary" id="a3_parent"><input asp-for="answer" value="3" type="radio" /><label id="a3">Answer 3</label></label>
+        <label class="btn btn-primary" id="a4_parent"><input asp-for="answer" value="4" type="radio" /><label id="a4">Answer 4</label></label>
+    </div>
+    <hr />
+
+    <button type="submit" class="btn btn-default" value="create">Create</button>
+</form>
+
+<script>
+$(document).ready(function () {
+    document.getElementById("mtlp_choice").addEventListener("click", function () {
+        document.getElementById("a1").innerHTML = "Answer 1";
+        document.getElementById("a2").innerHTML = "Answer 2";
+
+        document.getElementById("q1").parentElement.style.display = "block";
+        document.getElementById("q2").parentElement.style.display = "block";
+        document.getElementById("q3").parentElement.style.display = "block";
+        document.getElementById("q4").parentElement.style.display = "block";
+
+        document.getElementById("a3_parent").style.display = "block";
+        document.getElementById("a4_parent").style.display = "block";
+
+    });
+
+    document.getElementById("true_false").addEventListener("click", function () {
+
+        document.getElementById("a1").innerHTML = " True";
+        document.getElementById("a2").innerHTML = " False";
+
+        var btns = document.getElementsByClassName("active"); // array of elements with class name "btn btn-primary"
+        for (var i = 0; i < btns.length; i++) {
+            if (btns[i].id == "a3_parent" || btns[i].id == "a4_parent") {
+                console.log(btns[i].id);
+                btns[i].classList.remove('active');
+                document.getElementById("a1_parent").classList.add("active");
+                console.log(document.getElementById("a1").children[0]);
+                document.getElementById("a1_parent").children[0].checked = true;
+ //               .classList.add('active');
+ //               document.getElementById("a1").innerHTML = '<input value="1" type="radio" id="answer" name="answer" checked> True';
+            }
+        }
+
+        document.getElementById("q1").parentElement.style.display = "none";
+        document.getElementById("q2").parentElement.style.display = "none";
+        document.getElementById("q3").parentElement.style.display = "none";
+        document.getElementById("q4").parentElement.style.display = "none";
+        document.getElementById("a3_parent").style.display = "none";
+        document.getElementById("a4_parent").style.display = "none";
+//        document.getElementById("a4_parent").require = true;
+
+
+    });
+
+});
+</script>

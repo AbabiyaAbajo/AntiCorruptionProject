@@ -1,0 +1,227 @@
+﻿
+@using Microsoft.AspNetCore.Http
+@model ACWebsite.Models.Dashboard
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Dashboard";
+}
+@{ int NUM_COLUMS_IND = 2;}
+<!-- Trigger the modal with a button -->
+@*<a href="#new_quiz" class="btn btn-info btn-lg">Open modal</a>*@
+<!-- Modal -->
+<div id="new_quiz_modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Create quiz</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form asp-controller="Home" asp-action="MakeQuizModal">
+                    <input hidden asp-for="createQuiz.userid" value="@Context.Session.GetInt32("UserId")" />
+
+                    <div class="form-group">
+                        <h6>Title</h6>
+                        <input class="form-control" asp-for="createQuiz.title" required autofocus />
+                    </div>
+                    <div class="form-group">
+                        <h6>Description</h6>
+                        <textarea class="form-control" asp-for="createQuiz.description" rows="3"></textarea>
+                    </div>
+                    <hr />
+                    @* Print all industries *@
+                    <h6>Select industry of the quiz</h6>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                @{int ind_count = 1; int elements_in_column = Model.quizIndustries.Count() / NUM_COLUMS_IND;}
+                                @foreach (var industry in Model.quizIndustries)
+                                {
+                                    @* Start new column *@
+                                    if (ind_count % (elements_in_column + 1) == 0)
+                                    {
+                                    @:</div>
+                                    @:<div class="col">
+                                    }
+                                    <div class="mx-auto">
+                                        <label class="btn btn-outline-info btn-block">
+                                            <input type="radio" asp-for="createQuiz.industry_Id" id="ind_@industry.id" value="@industry.id" required> @industry.name
+                                        </label>
+                                    </div>
+                                    ind_count++;
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <sup>Do you want to add an industry?</sup>
+                    <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <sup>Click here</sup>
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                        <sup class="text-danger"> * Please select one of the industries from the given list that best fits your quiz.
+                        If you wish to add an instrusty, enter it below and press "Create". Your request will be processed by the 
+                        moderetor and will be added to the list once it is approved.</sup>
+                        <input type="text" class="form-control" asp-for="suggestedIndustry" placeholder="Enter Industry">
+                    </div>
+                    <hr />
+                    <button type="submit" class="btn btn-warning float-right" value="create">Create</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+</br>
+<h5>My Quizzes</h5>
+<div class="container">
+    <div class="row">
+        <div class="col my-auto">
+            <div class="mb-0 text-center cont" style="max-width: 17rem; max-height: 15rem; min-height: 11rem;">
+                <a class="text" href="#new_quiz"><img src="/images/add2.png"></a>
+                @*<a asp-controller="Home" asp-action="CreateQuiz"><img src="~/images/add2.png"></a>*@
+                <div class="overlay">
+                    <a class="text" href="#new_quiz"><img src="/images/add_hover.png"></a>
+                    @*<a asp-controller="Home" asp-action="CreateQuiz" class="text"><img src="~/images/add_hover.png"></a>*@
+                </div>
+            </div>
+        </div>
+        @* Following code generates rows of quizes. 4 quizzes in each row *@
+        @{
+            var quizzesInRow = 4;
+            var count = 1;
+            var currentRow = 1;
+        }
+
+        @foreach (var quiz in @Model.quizzes)
+        {
+            @* Start new row *@
+            @if (count % quizzesInRow == 0)
+            {
+            @:</div>
+            @:</br>
+            @:<div class="row">
+                currentRow++;
+            }
+            <div class="col">
+                <div class="card text-white bg-info mb-3" style="max-width: 17rem; max-height: 15rem; min-height: 11rem;">
+                    <a asp-controller="Home" asp-action="QuizDetails" asp-route-id="@quiz.id" class="stretched-link"></a>
+                    <div class="card-header">
+                        @quiz.title
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">@quiz.description</p>
+                    </div>
+                    <div class="card-footer bg-light text-muted py-1">
+                        <small class="text-muted">Created on @quiz.created</small>
+                    </div>
+                </div>
+            </div>
+            count++;
+        }
+
+        @* Add dummy cards so the row structure is not broken. There must 4 cards(quizzes) in a row *@
+        @for (var i = 0; i < (quizzesInRow * currentRow - count); i++)
+        {
+            <div class="col"></div>
+
+        }
+    </div>
+</div>
+
+</br>
+
+<h5>Quizzes assigned to me</h5>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card text-info bg-light mb-3" style="max-width: 17rem; max-height: 15rem; min-height: 11rem;">
+                <div class="card-header">
+                    Third Party Due Diligence Verification – How to Protect Yourself Through an Open Source Process
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Due December 12th</p>
+                </div>
+                <div class="card-footer bg-light text-muted py-1">
+                    <small class="text-muted">Assigned by Nymbus on Nov. 15, 2019</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+        </div>
+
+        <div class="col"></div>
+
+        <div class="col"></div>
+
+        @*
+        <div class="col">
+            <div class="card text-info bg-light mb-3" style="max-width: 17rem; max-height: 15rem;">
+                <div class="card-header">Title</div>
+                <div class="card-body">
+                    <p class="card-text">Description goes here</p>
+                </div>
+                <div class="card-footer bg-light text-muted py-1">
+                    <small class="text-muted">Assigned by Ilya K. Nov. 15, 2019</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-info bg-light mb-3" style="max-width: 17rem; max-height: 15rem;">
+                <div class="card-header">Title</div>
+                <div class="card-body">
+                    <p class="card-text">Description goes here</p>
+                </div>
+                <div class="card-footer bg-light text-muted py-1">
+                    <small class="text-muted">Assigned by Ilya K. Nov. 15, 2019</small>
+                </div>
+            </div>
+        </div>
+        *@
+    </div>
+    @*
+    <div class="row">
+        <div class="col">
+            <div class="card text-info bg-light mb-3" style="max-width: 17rem; max-height: 15rem;">
+                <div class="card-header">Title</div>
+                <div class="card-body">
+                    <p class="card-text">Description goes here</p>
+                </div>
+                <div class="card-footer bg-light text-muted py-1">
+                    <small class="text-muted">Assigned by Ilya K. Nov. 15, 2019</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-info bg-light mb-3" style="max-width: 17rem; max-height: 15rem;">
+                <div class="card-header">Title</div>
+                <div class="card-body">
+                    <p class="card-text">Description goes here</p>
+                </div>
+                <div class="card-footer bg-light text-muted py-1">
+                    <small class="text-muted">Assigned by Ilya K. Nov. 15, 2019</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+
+    </div>
+        *@
+</div>
+
+
+
+<script>
+$('a[href$="#new_quiz"]').on( "click", function() {
+   $('#new_quiz_modal').modal('show');
+});
+</script>

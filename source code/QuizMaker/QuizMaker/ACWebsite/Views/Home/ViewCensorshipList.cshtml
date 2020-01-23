@@ -1,0 +1,55 @@
+﻿@model IEnumerable<ACWebsite.Models.CensoredWord>
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Censorship List";
+}
+
+<div>
+    <h3>Censorship listing</h3>
+    <br /><br />
+    <form asp-controller="Home" asp-action="AddCensorship" method="post">
+        <div class="form-group">
+            <label>Word </label>
+            <input class="form-control" type="text" name="censor" />
+        </div>
+        <div class="form-group">
+            <button type="submit" class="form-control">Add Censor</button>
+        </div>
+    </form>
+</div>
+
+
+@{
+    <h3>Current Censorship</h3>
+    @if (Model == null || Model.Count() == 0)
+    {
+        <p>No Censorship added to database..</p>
+    }
+    else
+    {
+        int color = 0;
+        @foreach (var censor in Model)
+        {
+            @if (color % 2 == 0)
+            {
+                <div style="width: auto; display: block; background-color: LightGrey; border: 1px solid DarkGrey; margin: 10px 0px 10px 0px; padding: 0px 20px 5px 20px; border-radius: 10px;">
+                    <p>
+                        @censor.Word
+                        <a asp-controller="Home" asp-action="DeleteCensorship" asp-route-id="@censor.id">Delete</a>
+                    </p>
+                </div>
+            }
+            else
+            {
+                <div style="width: auto; display: block; background-color: DarkGrey; border: 1px solid DarkGrey; margin: 10px 0px 10px 0px; padding: 0px 20px 5px 20px; border-radius: 10px;">
+                    <p>
+                        @censor.Word
+                        <a asp-controller="Home" asp-action="DeleteCensorship" asp-route-id="@censor.id">Delete</a>
+                    </p>
+                </div>
+            }
+        }
+    }
+}

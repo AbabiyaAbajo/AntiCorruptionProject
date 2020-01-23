@@ -1,0 +1,107 @@
+﻿@using Microsoft.AspNetCore.Http
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "ACWebsite";
+}
+
+
+<div class="jumbotron text-center" style="background-color: #F4CC70">
+    <div class="container">
+        <h1 class="jumbotron-heading">ANTI - CORRUPTION</h1>
+        <p class="lead text-muted">This is the quiz maker for Anti - Corruption ......</p>
+        <p>
+            <a href="/Home/CreateQuiz" class="btn btn-primary my-2" style="background-color: #6AB187">Create Quiz</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Home/NewQuestion" class="btn btn-primary my-2" style="background-color: #6AB187">Create Question</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Home/ViewMyQuestions" class="btn btn-primary my-2" style="background-color: #6AB187">My Questions</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Home/ViewMyQuizzes" class="btn btn-primary my-2" style="background-color: #6AB187">My Quizzes</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Home/BrowseQuestions" class="btn btn-primary my-2" style="background-color: #6AB187">Other Questions</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Home/BrowseQuizzes" class="btn btn-primary my-2" style="background-color: #6AB187">Other Quizzes</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/Home/TakeQuiz/52" class="btn btn-primary my-2" style="background-color: #6AB187">Take Quiz</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+    </div>
+</div>
+
+@if (Context.Session.GetInt32("UserId") != null)
+{
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#33CCFF" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Making Quiz - Multiple Choice</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">Make 4 answers for each question.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="/Home/QAmaking" class="btn btn-primary my-2" style="background-color: #33CCFF">Go</a>
+                                <small class="text-muted">Time unlimited</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#33CCFF" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Making Quiz - Short Answer</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">Make a short answer for each question</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-primary my-2" style="background-color: #33CCFF">Go</a>
+                                <small class="text-muted">Time unlimited</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#33CCFF" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Making Quiz - Dichotomous</text></svg>
+                        <div class="card-body">
+                            <p class="card-text">Make true/false questions and answers</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="/Home/QAmakingtruefalse" class="btn btn-primary my-2" style="background-color: #33CCFF">Go</a>
+                                <small class="text-muted">Time unlimited</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#808B96" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Taking Quiz - </text></svg>
+                        <div class="card-body">
+                            <p class="card-text">Questions: 5</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="/Home/Quiztaking" class="btn btn-secondary my-2" style="background-color: #808B96">Go</a>
+                                <small class="text-muted">Time unlimited</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#808B96" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Taking quiz - </text></svg>
+                        <div class="card-body">
+                            <p class="card-text">Questions: 5</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="/Home/Quiztaking" class="btn btn-secondary my-2" style="background-color: #808B96">Go</a>
+                                <small class="text-muted">Time unlimited</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#808B96" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Taking quiz - </text></svg>
+                        <div class="card-body">
+                            <p class="card-text">Questions: 5</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="/Home/Quiztaking" class="btn btn-secondary my-2" style="background-color: #808B96">Go</a>
+                                <small class="text-muted">Time unlimited</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+

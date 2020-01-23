@@ -1,0 +1,93 @@
+﻿@using Microsoft.AspNetCore.Http
+@model ACWebsite.Models.QuizViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "View Quiz";
+}
+<h2>@Model.Quiz.title</h2>
+<p>@Model.Quiz.description</p>
+<p>Questions: @Model.Questions.Count()</p>
+<hr />
+<div class="row">
+    <h3>Questions</h3>
+    @{ var count = 1;}
+    @if (Model.Questions == null || Model.Questions.Count() == 0)
+    {
+        <div class="card-body">You haven't added any questions yet!</div>
+    }
+    else
+    {
+        @foreach (var item in Model.Questions)
+        {
+            <div style="width: 90%; display: block; border: 1px solid DarkGrey; margin: 10px 0px 10px 0px; padding: 0px 20px 5px 20px; border-radius: 10px; @if(count++ % 2 == 0) { @Html.Raw("background-color: LightGrey;") }">
+                <h3>
+                    <a asp-controller="Home" asp-action="QuestionDetails" asp-route-id="@item.id">@item.question</a>
+                </h3>
+                <a asp-controller="Home" asp-action="RemoveQuestion" asp-route-questionid="@item.id" asp-route-quizid="@Model.Quiz.id">Remove Question From Quiz</a>
+                <p class="text-muted small">Posted on: @item.date_created.ToShortDateString() by: @item.User.name</p>
+            </div>
+        }
+    }
+</div>
+<hr />
+
+
+<div class="row">
+    <h3>Here are some questions you can add to your quiz</h3>
+    @{ var countCan = 1;}
+    @if (Model.CandidateQuestions == null || Model.CandidateQuestions.Count() == 0)
+    {
+        <div class="card-body">It looks like there's nothing here</div>
+    }
+    else
+    {
+        <form asp-controller="Home" asp-action="ViewQuiz" asp-route-id="@ViewData["CurrentId"]" method="get">
+            <p>
+                Search: <input name="search" />
+                <input type="submit" value="Search">
+            </p>
+        </form>
+
+        <label>Sort by: </label>
+        <div class="btn-group">
+            <a asp-controller="Home" asp-route-sort="name" asp-action="ViewQuiz" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-id="@ViewData["CurrentId"]" class="btn btn-default">Question Name</a>
+            <a asp-controller="Home" asp-route-sort="date" asp-action="ViewQuiz" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-id="@ViewData["CurrentId"]" class="btn btn-default">Date</a>
+        </div>
+
+        @foreach (var item in Model.CandidateQuestions)
+        {
+            <div style="width: auto; display: block; border: 1px solid DarkGrey; margin: 10px 0px 10px 0px; padding: 0px 20px 5px 20px; border-radius: 10px; @if(countCan++ % 2 == 0) { @Html.Raw("background-color: LightGrey;") }">
+                <h3>
+                    <a asp-controller="Home" asp-action="QuestionDetails" asp-route-id="@item.id">@item.question</a>
+                </h3>
+                <a asp-controller="Home" asp-action="AddQuestion" asp-route-questionid="@item.id" asp-route-quizid="@Model.Quiz.id">Add Question to Quiz</a>
+                <p class="text-muted small">Posted on: @item.date_created.ToShortDateString() by: @item.User.name</p>
+            </div>
+        }
+    }
+</div>
+
+@{
+    var prevDisabled = !Model.CandidateQuestions.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.CandidateQuestions.HasNextPage ? "disabled" : "";
+}
+
+@if (Model.CandidateQuestions != null && Model.CandidateQuestions.Count() != 0)
+{
+    <a asp-action="ViewQuiz"
+       asp-route-sort="@ViewData["CurrentSort"]"
+       asp-route-page="@(Model.CandidateQuestions.PageIndex - 1)"
+       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+       asp-route-id="@ViewData["CurrentId"]"
+       class="btn btn-default @prevDisabled">
+        Previous
+    </a>
+    <a asp-action="ViewQuiz"
+       asp-route-sort="@ViewData["CurrentSort"]"
+       asp-route-page="@(Model.CandidateQuestions.PageIndex + 1)"
+       asp-route-currentFilter="@ViewData["CurrentFilter"]"
+       asp-route-id="@ViewData["CurrentId"]"
+       class="btn btn-default @nextDisabled">
+        Next
+    </a>
+}

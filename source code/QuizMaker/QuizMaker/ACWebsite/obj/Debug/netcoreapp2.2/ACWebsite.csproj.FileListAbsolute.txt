@@ -1,0 +1,213 @@
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.deps.json
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.runtimeconfig.json
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.runtimeconfig.dev.json
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.dll
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csproj.CoreCompileInputs.cache
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorAssemblyInfo.cache
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorAssemblyInfo.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.AssemblyInfoInputs.cache
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.AssemblyInfo.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorTargetAssemblyInfo.cache
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.pdb
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.dll
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.pdb
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.Views.dll
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.Views.pdb
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.TagHelpers.input.cache
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.TagHelpers.output.cache
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorCoreGenerate.cache
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorTargetAssemblyInfo.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.Views.pdb
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csproj.CopyComplete
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\NewQuestion.g.cshtml.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.g.cshtml.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Register.g.cshtml.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewMyQuestions.g.cshtml.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csprojAssemblyReference.cache
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\BrowseQuestions.g.cshtml.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\CreateQuiz.g.cshtml.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewQuiz.g.cshtml.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewMyQuizzes.g.cshtml.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\BrowseQuizzes.g.cshtml.cs
+C:\Users\Jaeden\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\QuizDetails.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csproj.CoreCompileInputs.cache
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorAssemblyInfo.cache
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorAssemblyInfo.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.AssemblyInfoInputs.cache
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.AssemblyInfo.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.TagHelpers.input.cache
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.TagHelpers.output.cache
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorCoreGenerate.cache
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\BrowseQuestions.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\BrowseQuizzes.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ConfirmQuestions.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\CreateQuiz.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\NewQuestion.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\QuizDetails.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Register.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\SplashPage.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewMyQuestions.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewMyQuizzes.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewQuiz.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorTargetAssemblyInfo.cache
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorTargetAssemblyInfo.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.dll
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.pdb
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csprojAssemblyReference.cache
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.deps.json
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.runtimeconfig.json
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.runtimeconfig.dev.json
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.dll
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.pdb
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.Views.dll
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.Views.pdb
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.Views.pdb
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csproj.CopyComplete
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\EditUser.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\QuestionDetails.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\TakeQuiz.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Score.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewCensorshipList.g.cshtml.cs
+C:\Users\GG\source\repos\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewTickets.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.deps.json
+C:\Users\GG\Documents\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.runtimeconfig.json
+C:\Users\GG\Documents\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.runtimeconfig.dev.json
+C:\Users\GG\Documents\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.dll
+C:\Users\GG\Documents\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.pdb
+C:\Users\GG\Documents\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.Views.dll
+C:\Users\GG\Documents\ACWebsite\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.Views.pdb
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csproj.CoreCompileInputs.cache
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorAssemblyInfo.cache
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorAssemblyInfo.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.AssemblyInfoInputs.cache
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.AssemblyInfo.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.TagHelpers.input.cache
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.TagHelpers.output.cache
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorCoreGenerate.cache
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\BrowseQuestions.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\BrowseQuizzes.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ConfirmQuestions.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\CreateQuiz.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\EditUser.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\NewQuestion.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\QuestionDetails.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\QuizDetails.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Register.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Score.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\SplashPage.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\TakeQuiz.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewCensorshipList.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewMyQuestions.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewMyQuizzes.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewQuiz.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewTickets.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorTargetAssemblyInfo.cache
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorTargetAssemblyInfo.cs
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.Views.pdb
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.dll
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.pdb
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csproj.CopyComplete
+C:\Users\GG\Documents\ACWebsite\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csprojAssemblyReference.cache
+C:\Users\GG\Documents\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.deps.json
+C:\Users\GG\Documents\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.runtimeconfig.json
+C:\Users\GG\Documents\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.runtimeconfig.dev.json
+C:\Users\GG\Documents\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.dll
+C:\Users\GG\Documents\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.pdb
+C:\Users\GG\Documents\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.Views.dll
+C:\Users\GG\Documents\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.Views.pdb
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csproj.CoreCompileInputs.cache
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorAssemblyInfo.cache
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorAssemblyInfo.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.AssemblyInfoInputs.cache
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.AssemblyInfo.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.TagHelpers.input.cache
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.TagHelpers.output.cache
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorCoreGenerate.cache
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\BrowseQuestions.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\BrowseQuizzes.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ConfirmQuestions.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\CreateQuiz.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Dashboard.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\EditUser.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Error.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\NewQuestion.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\QuestionDetails.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\QuizDetails.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Register.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Score.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\SplashPage.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\TakeQuiz.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewCensorshipList.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewMyQuestions.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewMyQuizzes.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewQuiz.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewTickets.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorTargetAssemblyInfo.cache
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorTargetAssemblyInfo.cs
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.Views.pdb
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.dll
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.pdb
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csproj.CopyComplete
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csprojAssemblyReference.cache
+C:\Users\GG\Documents\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.deps.json
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.runtimeconfig.json
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.runtimeconfig.dev.json
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.dll
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.pdb
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.Views.dll
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\bin\Debug\netcoreapp2.2\ACWebsite.Views.pdb
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csprojAssemblyReference.cache
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorAssemblyInfo.cache
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorAssemblyInfo.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.AssemblyInfoInputs.cache
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.AssemblyInfo.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.TagHelpers.input.cache
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.TagHelpers.output.cache
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorCoreGenerate.cache
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\BrowseQuestions.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\BrowseQuizzes.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ConfirmQuestions.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\CreateQuiz.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Dashboard.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\EditUser.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Error.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\NewQuestion.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\QuestionDetails.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\QuizDetails.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Register.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\Score.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\SplashPage.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\TakeQuiz.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewCensorshipList.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewMyQuestions.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewMyQuizzes.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewQuiz.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Home\ViewTickets.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorTargetAssemblyInfo.cache
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.RazorTargetAssemblyInfo.cs
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.Views.pdb
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.dll
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.pdb
+C:\Users\btrev\Desktop\Project Dropbox\Anti-Corruption source code\source code\QuizMaker\QuizMaker\ACWebsite\obj\Debug\netcoreapp2.2\ACWebsite.csproj.CopyComplete
